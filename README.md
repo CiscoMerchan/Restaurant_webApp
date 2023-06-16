@@ -68,3 +68,52 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#################################################################
+
+1. Delete `src` file. and recreate a newone
+
+2. create `index.js`
+
+3. create `App.js` file
+    using 'ES7 React/Redux/React-Native/JS Snippets' to create code more quick like using `rafce` snippets to create components 
+    for more    SNIPPETS : `https://github.com/ults-io/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md`
+
+4. install dependencies:
+ *   `npm install react-icons`
+
+5. base of `src` folder and files like are premade just the base.
+
+6. Navbar component
+
+### Navbar
+ 1. ```
+ import {GiHamburgerMenu} from 'react-icons/gi';
+import {MdOutlineRestaurantMenu} from 'react-icons/md';
+import images from '../../constants/images'
+ ```.
+
+* highlight **Open and Close hamburger menu**:
+
+
+ ```
+ const [toggleMenu, setToggleMenu] = useState(false);
+
+  return( ...
+
+   <div className='app__navbar-smallscreen'>
+      <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
+      
+      {toggleMenu &&(
+        <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
+          <MdOutlineRestaurantMenu className='overlay__close' fontSize={27} onClick={() => setToggleMenu(false)} />
+          <ul className='app__navbar-smallscreen_links'>
+            <li className='p__opensans'><a href='#home'>Home</a></li>
+            <li className='p__opensans'><a href='#about'>About</a></li>
+            <li className='p__opensans'><a href='#menu'>Menu</a></li>
+            <li className='p__opensans'><a href='#awards'>Awards</a></li>
+            <li className='p__opensans'><a href='#contact'>Contact</a></li>
+         </ul>  
+        </div>
+      )}
+ ```
