@@ -130,3 +130,5 @@ on the text div import the `SubHeading ` component in component folder.
 **TIP Note**  to import a component: write the name the component <MyComponent />, doble click in the text and `Ctrl + spacebar` the name of the file to import will be display `Enter` and that will import the file at the top of the folder.
 
 ### About Us
+
+**TIP Note**  to go to the component file , click on the component `Ctrl+Click` and that will open the component folder clicked. 
