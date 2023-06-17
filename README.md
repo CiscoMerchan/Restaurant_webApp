@@ -132,3 +132,9 @@ on the text div import the `SubHeading ` component in component folder.
 ### About Us
 
 **TIP Note**  to go to the component file , click on the component `Ctrl+Click` and that will open the component folder clicked. 
+
+
+
+### Special Menu
+
+    Reusing components and using .map() to render data. 
