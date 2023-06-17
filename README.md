@@ -89,14 +89,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Navbar
  1. ```
  import {GiHamburgerMenu} from 'react-icons/gi';
-import {MdOutlineRestaurantMenu} from 'react-icons/md';
-import images from '../../constants/images'
+ import {MdOutlineRestaurantMenu} from 'react-icons/md';
+ import images from '../../constants/images'
  ```.
 
 * highlight **Open and Close hamburger menu**:
 
 
- ```
+```
  const [toggleMenu, setToggleMenu] = useState(false);
 
   return( ...
@@ -116,4 +116,17 @@ import images from '../../constants/images'
          </ul>  
         </div>
       )}
+
  ```
+
+<br>
+
+### Heading
+
+1. Create div to subdivide the content. in this case there is to main div inside Header component one is the text and the other is the image.
+
+on the text div import the `SubHeading ` component in component folder. 
+
+**TIP Note**  to import a component: write the name the component <MyComponent />, doble click in the text and `Ctrl + spacebar` the name of the file to import will be display `Enter` and that will import the file at the top of the folder.
+
+### About Us
