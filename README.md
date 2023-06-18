@@ -142,3 +142,7 @@ on the text div import the `SubHeading ` component in component folder.
 ### Chef
 
 be more mindful about how works with divs
+
+### Intro Video
+
+`useRef()` hook ( more info : `https://dmitripavlutin.com/react-useref/`)
