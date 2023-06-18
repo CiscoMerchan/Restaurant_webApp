@@ -138,3 +138,7 @@ on the text div import the `SubHeading ` component in component folder.
 ### Special Menu
 
     Reusing components and using .map() to render data. 
+
+### Chef
+
+be more mindful about how works with divs
