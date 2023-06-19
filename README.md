@@ -146,3 +146,51 @@ be more mindful about how works with divs
 ### Intro Video
 
 `useRef()` hook ( more info : `https://dmitripavlutin.com/react-useref/`)
+
+
+### Laurels
+
+**TIP NOTE** Is very important to remember that any css selector and rules that repete along the webapp like "Subheading" or "titles" better set those rule in the App.css or a index.css, like this using while styling the components without repeating the css code every time. 
+
+** If it is necessary to create a several"cards" that can be render with .map() (better do it as a children component) create a component out side of the component and in the same file becase it is just for that particular parent component. example: 
+
+```
+// CHILDREN COMPONENT
+const AwardCard = ({ award: {imgUrl, title , subtitle }}) => (
+  <div className='app__laurels_awards-card'>
+    <img src={imgUrl} alt='award'/>
+    <div className='app__laurels_awards-card_content'>
+      <p className='p__cormorant' style={{ color: '#DCCA87'}}>{title}</p> 
+      <p className='p__cormorant'>{subtitle}</p> 
+    </div>
+  </div>
+)
+
+// PARENT COMPONENT
+const Laurels = () => (
+  <div className="app__bg app__wrapper section__padding" id="awards">
+
+    <div className='app__wrapper_info'>
+      <SubHeading title="Awards & recognition" />
+      <h1 className='headtext__cormorant'>Our Laurels</h1>
+
+      <div className='app__laurels_awards'>
+        {data.awards.map((award) => 
+        <AwardCard
+          award={award}
+          key={award.title}
+         />
+          )}
+      </div>     
+    </div>
+    
+    <div className='app__wrapper_img'>
+        <img src={images.laurels} alt='laurels' />  
+    </div>
+           
+  </div>
+);
+
+export default Laurels;
+
+```
