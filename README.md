@@ -231,3 +231,7 @@ Tocreate a gallery
     </div>
     
   </div> `
+
+  ###FindUs
+
+  using css selector from App.css and inline css 
